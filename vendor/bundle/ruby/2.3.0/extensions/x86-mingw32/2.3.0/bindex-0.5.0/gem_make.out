@@ -1,0 +1,19 @@
+current directory: C:/Github/Project_Rails/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+C:/RailsInstaller/Ruby2.3.3/bin/ruby.exe -r ./siteconf20190302-28732-1acprn1.rb extconf.rb
+creating Makefile
+
+current directory: C:/Github/Project_Rails/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+/bin/sh: line 0: igncr: invalid option name
+
+current directory: C:/Github/Project_Rails/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+generating cruby-i386-mingw32.def
+/bin/sh: line 0: igncr: invalid option name
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: C:/Github/Project_Rails/vendor/bundle/ruby/2.3.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/bin/sh: line 0: igncr: invalid option name
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20190302-28732-1vmqyw3/bindex
