@@ -8,15 +8,15 @@ services:
   - postgresql
 
 before_script:
-  - psql -c 'create database travis_ci_test;' -U postgres
+  - psql -c 'create database Project_Rails_test;' -U postgres
   - cp config/database.yml.travis config/database.yml
+
+script:
+
 
 before install:
   - gem update --system
   - gem install bundler
-
-before script:
- - 
 
 deploy:
   provider: heroku
