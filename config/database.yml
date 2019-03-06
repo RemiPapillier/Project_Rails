@@ -2,20 +2,20 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: Project_Rails
+  database: Project_Rails_dev
   username: postgres
   password: rp07051998
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: Project_Rails
+  database: Project_Rails_test
   username: postgres
   password: rp07051998
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: Project_Rails
+  database: Project_Rails_prod
   username: postgres
   password: rp07051998
