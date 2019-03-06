@@ -8,13 +8,12 @@ services:
   - postgresql
 
 before_script:
-  - psql -c 'create database Project_Rails_test;' -U postgres
+  - psql -c 'create database Project_Rails;' -U postgres
   - cp config/database.travis.yml config/database.yml
 
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
-  - bundle exec rake
 
 deploy:
   provider: heroku
