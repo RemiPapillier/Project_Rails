@@ -1,12 +1,16 @@
 language: ruby
 rvm:
-- 2.3.5
+  - 2.3.5
+env:
+  - DB=postgresql
 
 before install:
   - gem update --system
   - gem install bundler
-  - bundle install
-
+before script:
+  - bundle exec rake db:create
+script:
+  - bin/rails db:migrate RAILS_ENV=development
 deploy:
   provider: heroku
   api_key:
