@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.3.3
+  - 2.3.5
 env:
   - DB=postgresql
 
@@ -15,10 +15,6 @@ script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
   - bundle exec rake
-
-before install:
-  - gem update --system
-  - gem install bundler
 
 deploy:
   provider: heroku
